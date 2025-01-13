@@ -34,7 +34,7 @@ const tokenCache = {
   },
 };
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
+ //Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -47,7 +47,7 @@ export default function RootLayout() {
   useEffect(() => {
     if (error) throw error;
   }, [error]);
-
+ 
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
@@ -75,7 +75,7 @@ function RootLayoutNav() {
       router.push('/(modals)/login');
     }
   }, [isLoaded]);
-
+  
   return (
     <Stack>
       <Stack.Screen
