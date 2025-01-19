@@ -20,7 +20,6 @@ const index = () => {
       }}/>
 
       <Listing listing={items} category={category}/>
-
     </View>
   )
 }

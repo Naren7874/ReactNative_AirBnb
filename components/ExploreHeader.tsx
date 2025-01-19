@@ -59,7 +59,7 @@ const ExploreHeader = ({onCategoryChanged}:Props) => {
     selected?.measure((x:any)=>{
       scrollRef.current?.scrollTo({x:x-16,y:0,animated:true});
     })
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium)
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy)
     onCategoryChanged(categories[index].name)
   };
 
