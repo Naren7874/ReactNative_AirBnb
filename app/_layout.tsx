@@ -78,6 +78,7 @@ function RootLayoutNav() {
   
   return (
     <Stack>
+      
       <Stack.Screen
         name="(tabs)"
         options={{ headerShown: false }}
@@ -99,7 +100,7 @@ function RootLayoutNav() {
       />
       <Stack.Screen
         name="listing/[id]"
-        options={{ headerTitle: '' }}
+        options={{ headerTitle: '' , headerTransparent: true}}
       />
       <Stack.Screen
         name="(modals)/booking"
